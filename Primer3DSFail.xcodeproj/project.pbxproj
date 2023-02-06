@@ -13,7 +13,20 @@
 		084CA2312990BC20007D0057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084CA22F2990BC20007D0057 /* Main.storyboard */; };
 		084CA2332990BC22007D0057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 084CA2322990BC22007D0057 /* Assets.xcassets */; };
 		084CA2362990BC22007D0057 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084CA2342990BC22007D0057 /* LaunchScreen.storyboard */; };
+		084CA2442990DCBC007D0057 /* Primer3DSFailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084CA2432990DCBC007D0057 /* Primer3DSFailUITests.swift */; };
+		084CA2462990DCBC007D0057 /* Primer3DSFailUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084CA2452990DCBC007D0057 /* Primer3DSFailUITestsLaunchTests.swift */; };
+		A6A9DC7A392213D9C437F27C /* Pods_Primer3DSFail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4AF08FF7144BC4F697CA8E /* Pods_Primer3DSFail.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		084CA2472990DCBC007D0057 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 084CA21E2990BC1F007D0057 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 084CA2252990BC20007D0057;
+			remoteInfo = Primer3DSFail;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		084CA2262990BC20007D0057 /* Primer3DSFail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Primer3DSFail.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,24 @@
 		084CA2322990BC22007D0057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		084CA2352990BC22007D0057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		084CA2372990BC22007D0057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		084CA2412990DCBC007D0057 /* Primer3DSFailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Primer3DSFailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		084CA2432990DCBC007D0057 /* Primer3DSFailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Primer3DSFailUITests.swift; sourceTree = "<group>"; };
+		084CA2452990DCBC007D0057 /* Primer3DSFailUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Primer3DSFailUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AE0EB7F81901BF12078D53D9 /* Pods-Primer3DSFail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Primer3DSFail.debug.xcconfig"; path = "Target Support Files/Pods-Primer3DSFail/Pods-Primer3DSFail.debug.xcconfig"; sourceTree = "<group>"; };
+		CF4AF08FF7144BC4F697CA8E /* Pods_Primer3DSFail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Primer3DSFail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5F5AA2208627F60EA75DA6A /* Pods-Primer3DSFail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Primer3DSFail.release.xcconfig"; path = "Target Support Files/Pods-Primer3DSFail/Pods-Primer3DSFail.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		084CA2232990BC20007D0057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A9DC7A392213D9C437F27C /* Pods_Primer3DSFail.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		084CA23E2990DCBB007D0057 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +68,10 @@
 			isa = PBXGroup;
 			children = (
 				084CA2282990BC20007D0057 /* Primer3DSFail */,
+				084CA2422990DCBC007D0057 /* Primer3DSFailUITests */,
 				084CA2272990BC20007D0057 /* Products */,
+				64AAD385618BBB7C07BC6E9B /* Pods */,
+				4529A75EDC54C791A70A9D9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				084CA2262990BC20007D0057 /* Primer3DSFail.app */,
+				084CA2412990DCBC007D0057 /* Primer3DSFailUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +98,32 @@
 			path = Primer3DSFail;
 			sourceTree = "<group>";
 		};
+		084CA2422990DCBC007D0057 /* Primer3DSFailUITests */ = {
+			isa = PBXGroup;
+			children = (
+				084CA2432990DCBC007D0057 /* Primer3DSFailUITests.swift */,
+				084CA2452990DCBC007D0057 /* Primer3DSFailUITestsLaunchTests.swift */,
+			);
+			path = Primer3DSFailUITests;
+			sourceTree = "<group>";
+		};
+		4529A75EDC54C791A70A9D9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF4AF08FF7144BC4F697CA8E /* Pods_Primer3DSFail.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64AAD385618BBB7C07BC6E9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE0EB7F81901BF12078D53D9 /* Pods-Primer3DSFail.debug.xcconfig */,
+				E5F5AA2208627F60EA75DA6A /* Pods-Primer3DSFail.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 084CA23A2990BC22007D0057 /* Build configuration list for PBXNativeTarget "Primer3DSFail" */;
 			buildPhases = (
+				CB309E89284695D706600220 /* [CP] Check Pods Manifest.lock */,
 				084CA2222990BC20007D0057 /* Sources */,
 				084CA2232990BC20007D0057 /* Frameworks */,
 				084CA2242990BC20007D0057 /* Resources */,
+				08BCFE10E0556110EED02AA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -86,6 +145,24 @@
 			productName = Primer3DSFail;
 			productReference = 084CA2262990BC20007D0057 /* Primer3DSFail.app */;
 			productType = "com.apple.product-type.application";
+		};
+		084CA2402990DCBB007D0057 /* Primer3DSFailUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 084CA24B2990DCBC007D0057 /* Build configuration list for PBXNativeTarget "Primer3DSFailUITests" */;
+			buildPhases = (
+				084CA23D2990DCBB007D0057 /* Sources */,
+				084CA23E2990DCBB007D0057 /* Frameworks */,
+				084CA23F2990DCBB007D0057 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				084CA2482990DCBC007D0057 /* PBXTargetDependency */,
+			);
+			name = Primer3DSFailUITests;
+			productName = Primer3DSFailUITests;
+			productReference = 084CA2412990DCBC007D0057 /* Primer3DSFailUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +176,10 @@
 				TargetAttributes = {
 					084CA2252990BC20007D0057 = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					084CA2402990DCBB007D0057 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 084CA2252990BC20007D0057;
 					};
 				};
 			};
@@ -116,6 +197,7 @@
 			projectRoot = "";
 			targets = (
 				084CA2252990BC20007D0057 /* Primer3DSFail */,
+				084CA2402990DCBB007D0057 /* Primer3DSFailUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,7 +213,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		084CA23F2990DCBB007D0057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08BCFE10E0556110EED02AA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Primer3DSFail/Pods-Primer3DSFail-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Primer3DSFail/Pods-Primer3DSFail-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Primer3DSFail/Pods-Primer3DSFail-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB309E89284695D706600220 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Primer3DSFail-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		084CA2222990BC20007D0057 /* Sources */ = {
@@ -144,7 +275,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		084CA23D2990DCBB007D0057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084CA2462990DCBC007D0057 /* Primer3DSFailUITestsLaunchTests.swift in Sources */,
+				084CA2442990DCBC007D0057 /* Primer3DSFailUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		084CA2482990DCBC007D0057 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 084CA2252990BC20007D0057 /* Primer3DSFail */;
+			targetProxy = 084CA2472990DCBC007D0057 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		084CA22F2990BC20007D0057 /* Main.storyboard */ = {
@@ -282,6 +430,7 @@
 		};
 		084CA23B2990BC22007D0057 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE0EB7F81901BF12078D53D9 /* Pods-Primer3DSFail.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +458,7 @@
 		};
 		084CA23C2990BC22007D0057 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5F5AA2208627F60EA75DA6A /* Pods-Primer3DSFail.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -334,6 +484,38 @@
 			};
 			name = Release;
 		};
+		084CA2492990DCBC007D0057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pace.Primer3DSFailUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Primer3DSFail;
+			};
+			name = Debug;
+		};
+		084CA24A2990DCBC007D0057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pace.Primer3DSFailUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Primer3DSFail;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +533,15 @@
 			buildConfigurations = (
 				084CA23B2990BC22007D0057 /* Debug */,
 				084CA23C2990BC22007D0057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		084CA24B2990DCBC007D0057 /* Build configuration list for PBXNativeTarget "Primer3DSFailUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				084CA2492990DCBC007D0057 /* Debug */,
+				084CA24A2990DCBC007D0057 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

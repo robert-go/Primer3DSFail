@@ -1,0 +1,22 @@
+PODS:
+  - Primer3DS (1.0.3)
+  - PrimerSDK (2.16.3):
+    - PrimerSDK/Core (= 2.16.3)
+  - PrimerSDK/Core (2.16.3)
+
+DEPENDENCIES:
+  - Primer3DS
+  - PrimerSDK
+
+SPEC REPOS:
+  trunk:
+    - Primer3DS
+    - PrimerSDK
+
+SPEC CHECKSUMS:
+  Primer3DS: 895ab3a53731c87dfba26f30b70f59fcd590f94f
+  PrimerSDK: 7f1117b6eb6b9a038eeed35862d9d9a4450cc62e
+
+PODFILE CHECKSUM: 7aa270bacf2386cdedd5c30557ead9bc22be990e
+
+COCOAPODS: 1.11.3
