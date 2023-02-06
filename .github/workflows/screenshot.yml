@@ -1,0 +1,32 @@
+name: Screenshot
+
+on:
+  push:
+    branches: ["main", "dev"]
+
+jobs:
+  build:
+    runs-on: macos-12
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode_14.1.app
+
+      - name: Xcode version
+        run: /usr/bin/xcodebuild -version
+        shell: bash
+
+      - name: Install Dependencies
+        run: |
+          pod install
+        shell: bash
+
+      - name: SCREENSHOT
+        run: set -o pipefail && fastlane screenshot
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: screenshot
+          path: ./screenshots

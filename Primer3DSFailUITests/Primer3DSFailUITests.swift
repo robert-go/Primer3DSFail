@@ -23,6 +23,7 @@ final class Primer3DSFailUITests: XCTestCase {
 
     func testPrimerCheckout() throws {
         let app = XCUIApplication()
+        setupSnapshot(app)
         app.launch()
 
         let exists = NSPredicate(format: "exists == 1")
@@ -55,10 +56,11 @@ final class Primer3DSFailUITests: XCTestCase {
         cardHolderTxtFldTextField.typeText("John")
 
         elementsQuery/*@START_MENU_TOKEN@*/ .buttons["submit_btn"]/*[[".buttons[\"Pay $0.00\"]",".buttons[\"submit_btn\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/ .tap()
-
+        snapshot("01-PrimerScreen")
         let selectOutcome = app.staticTexts["Select outcome"]
+        sleep(10)
+        snapshot("02-PrimerScreen")
         expectation(for: exists, evaluatedWith: selectOutcome, handler: nil)
-        sleep(5)
         waitForExpectations(timeout: 10, handler: nil)
     }
 }
