@@ -94,6 +94,12 @@ class ViewController: UIViewController {
 
 extension ViewController: PrimerDelegate {
     func primerDidCompleteCheckoutWithData(_ data: PrimerSDK.PrimerCheckoutData) {
-        print(data)
+        Primer.shared.dismiss()
+        button.setTitle("Success", for: .normal)
+    }
+    
+    func primerDidFailWithError(_ error: Error, data: PrimerCheckoutData?, decisionHandler: @escaping ((PrimerErrorDecision) -> Void)) {
+        Primer.shared.dismiss()
+        button.setTitle("Failure", for: .normal)
     }
 }

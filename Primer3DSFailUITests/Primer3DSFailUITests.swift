@@ -56,8 +56,8 @@ final class Primer3DSFailUITests: XCTestCase {
 
         elementsQuery/*@START_MENU_TOKEN@*/ .buttons["submit_btn"]/*[[".buttons[\"Pay $0.00\"]",".buttons[\"submit_btn\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
-        let passTheChallange = app.staticTexts["Pass the challenge"]
-        expectation(for: exists, evaluatedWith: cardTxtFldTextField, handler: nil)
+        let passTheChallange = app.staticTexts["Success"]
+        expectation(for: exists, evaluatedWith: passTheChallange, handler: nil)
         waitForExpectations(timeout: 10, handler: nil)
     }
 }
