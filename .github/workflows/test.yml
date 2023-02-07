@@ -22,24 +22,19 @@ jobs:
         run: |
           pod cache list
         shell: bash
-
-
-      - name: Install Dependencies
-        run: |
-          pod install
-        shell: bash
-
       # - name: UI TEST
       #   run: |
       #     set -o pipefail && xcodebuild -workspace Primer3DSFail.xcworkspace -scheme "Primer3DSFail" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14 Pro Max,OS=16.1' test  | xcpretty
 
-      - name: Install bundle
-        run: bundle install
+      - name: Install Gem Dependencies
+        run: |
+          bundle config path vendor/bundle
+          bundle install
+      - name: Run UITests
+        run: bundle exec fastlane ui_test
 
-      - name: SCREENSHOT
-        run: bundle exec fastlane screenshot
-
-      - uses: actions/upload-artifact@v3
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v1
         with:
-          name: screenshot
-          path: ./screenshots
+          name: Screenshots
+          path: build/screenshots
