@@ -1,4 +1,4 @@
-name: UI Test
+name: Snapshot
 
 on:
   push:
@@ -14,12 +14,16 @@ jobs:
       - name: Select Xcode
         run: sudo xcode-select -switch /Applications/Xcode_14.1.app
 
+      - name: Install Dependencies
+        run: |
+          pod install
+
       - name: Install Gem Dependencies
         run: |
           bundle config path vendor/bundle
           bundle install
-          
-      - name: Run UITests
+
+      - name: Run Snapshot
         run: bundle exec fastlane ui_test
 
       - name: Upload screenshots
