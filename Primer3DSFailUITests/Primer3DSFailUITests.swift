@@ -54,13 +54,13 @@ final class Primer3DSFailUITests: XCTestCase {
         let cardHolderTxtFldTextField = elementsQuery/*@START_MENU_TOKEN@*/ .textFields["card_holder_txt_fld"]/*[[".textFields[\"e.g. John Doe\"]",".textFields[\"card_holder_txt_fld\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
         cardHolderTxtFldTextField.tap()
         cardHolderTxtFldTextField.typeText("John")
+        snapshot("01")
 
         elementsQuery/*@START_MENU_TOKEN@*/ .buttons["submit_btn"]/*[[".buttons[\"Pay $0.00\"]",".buttons[\"submit_btn\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/ .tap()
-        snapshot("01-PrimerScreen")
+        
         let selectOutcome = app.staticTexts["Select outcome"]
-        sleep(10)
-        snapshot("02-PrimerScreen")
+        snapshot("02", waitForLoadingIndicator: true)
         expectation(for: exists, evaluatedWith: selectOutcome, handler: nil)
-        waitForExpectations(timeout: 10, handler: nil)
+        waitForExpectations(timeout: 15, handler: nil)
     }
 }
