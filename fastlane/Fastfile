@@ -1,6 +1,6 @@
 
 Scheme = 'Primer3DSFail'
-Scheme_UITests = 'Primer3DSFail'
+Scheme_UITests = 'Primer3DSFailUITests'
 Screenshots_Output = 'build/screenshots' 
 
 AppIdentifier = 'com.pace.Primer3DSFail'
