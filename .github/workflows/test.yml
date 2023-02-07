@@ -33,6 +33,9 @@ jobs:
       #   run: |
       #     set -o pipefail && xcodebuild -workspace Primer3DSFail.xcworkspace -scheme "Primer3DSFail" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14 Pro Max,OS=16.1' test  | xcpretty
 
+      - name: Install bundle
+        run: bundle install
+
       - name: SCREENSHOT
         run: bundle exec fastlane screenshot
 
