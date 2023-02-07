@@ -94,12 +94,10 @@ class ViewController: UIViewController {
 
 extension ViewController: PrimerDelegate {
     func primerDidCompleteCheckoutWithData(_ data: PrimerSDK.PrimerCheckoutData) {
-        Primer.shared.dismiss()
-        button.setTitle("Success", for: .normal)
+        print("primerDidCompleteCheckoutWithData", data)
     }
     
     func primerDidFailWithError(_ error: Error, data: PrimerCheckoutData?, decisionHandler: @escaping ((PrimerErrorDecision) -> Void)) {
-        Primer.shared.dismiss()
-        button.setTitle("Failure", for: .normal)
+        print("primerDidFailWithError", error)
     }
 }
