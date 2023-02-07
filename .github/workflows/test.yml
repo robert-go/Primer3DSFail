@@ -21,7 +21,7 @@ jobs:
       - name: check cache
         run: |
           pod cache list
-          ls ~/Developer/Xcode/DerivedData/Primer3DSFail-*
+          echo `ls ~/Developer/Xcode/DerivedData/Primer3DSFail-*`
         shell: bash
 
       - name: Install Dependencies
