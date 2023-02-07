@@ -18,15 +18,17 @@ jobs:
         run: /usr/bin/xcodebuild -version
         shell: bash
 
+      - name: check cache
+        run: |
+          pod cache list
+        shell: bash
+
+
       - name: Install Dependencies
         run: |
           pod install
         shell: bash
 
-      # - name: Xcode iOS build
-      #   run: |
-      #     xcodebuild -workspace Primer3DSFail.xcworkspace -scheme Primer3DSFail -destination 'platform=iOS Simulator,name=iPhone 14 Pro Max,OS=16.1' | xcpretty
-    
       - name: UI TEST
         run: |
           set -o pipefail && xcodebuild -workspace Primer3DSFail.xcworkspace -scheme "Primer3DSFail" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14 Pro Max,OS=16.1' test  | xcpretty
