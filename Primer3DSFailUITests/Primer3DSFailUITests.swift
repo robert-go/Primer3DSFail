@@ -58,7 +58,7 @@ final class Primer3DSFailUITests: XCTestCase {
 
         elementsQuery/*@START_MENU_TOKEN@*/ .buttons["submit_btn"]/*[[".buttons[\"Pay $0.00\"]",".buttons[\"submit_btn\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
-        sleep(15)
+        sleep(30)
         snapshot("02")
         
         let selectOutcome = app.staticTexts["Select outcome"]
